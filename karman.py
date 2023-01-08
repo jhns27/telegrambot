@@ -45,7 +45,7 @@ def restricted(func):
         user = update.message.from_user
         LIST_OF_USERS = modules.load_users(func)
         if user_id not in LIST_OF_USERS:
-            quote_message = f"{constant.ZAMOK} Доступ запрещен, пожалуйста обратитесь для доступа к администратору @Aleskey3000\nВ качестве информации просьба указывать ФИО и должность"
+            quote_message = f"{constant.ZAMOK} Доступ запрещен, пожалуйста обратитесь для доступа к администратору {constant.MAIN_ADMIN_NIK}\nВ качестве информации просьба указывать ФИО и должность"
             update.message.reply_text(quote_message)
             logger.warning(
                 f"Ошибка, пользователь не авторизован с ID {user_id}, Его имя {user.full_name}"
