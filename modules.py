@@ -4,15 +4,6 @@ import ipaddress
 import time
 import re
 import constant
-import subprocess
-import dataset
-import requests
-import sqlalchemy
-from ping3 import ping
-from netmiko import ConnectHandler
-import netaddr
-import openpyxl
-import pandas as pd
 import puresnmp
 from puresnmp.x690.types import Integer, OctetString
 
