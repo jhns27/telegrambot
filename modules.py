@@ -118,6 +118,8 @@ def get_model(host):
                     or "L2+ Managed Switch with 4 SFP Slots" in model
                 ):
                     model = "Tp-Link T2600G-28TS"
+            else:
+                model = "Ошибка определения модели"
             return model
     except AttributeError:
         model = "Ошибка"
@@ -157,6 +159,9 @@ def basic_info(host, model):
                 return result
     except ipaddress.AddressValueError:
         result = "Неверный IP"
+        return result
+    except:
+        result = "Ошибка"
         return result
 
 def get_port_status(host, model):
