@@ -26,3 +26,4 @@ karman.service - systemd-сервис позволяющий запустить 
 - Модуль puresnmp==1.11.0.post1
 - Модуль python-telegram-bot==13.15
 - Так же у вас должен стоять Python не ниже версии **3.7**
+- В файле /etc/snmp/snmp.conf мибы должны быть отключены (mibs : )
